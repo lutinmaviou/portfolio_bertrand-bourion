@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Bertrand Bourion | Portfolio</title>
         <meta
           name="Portfolio Bertrand Bourion"
           content="Mon portfolio créé avec Next.js"
