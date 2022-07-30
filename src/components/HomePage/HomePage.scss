@@ -1,0 +1,55 @@
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.moon {
+  width: 40%;
+  position: absolute;
+  left: 55%;
+  top: 10%;
+  z-index: -1;
+  //transform: scale(0.8);
+}
+
+h1 {
+  color: white;
+  position: absolute;
+  top: 30%;
+  z-index: -1;
+  font-size: 5vw;
+}
+
+.dust-container {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+i {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.8;
+  box-shadow: 0 0 1vw 0.1vw white;
+  //filter: blur(0.01vw);
+  animation: animate linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  10%,
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
