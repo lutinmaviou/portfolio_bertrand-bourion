@@ -1,13 +1,7 @@
 import Head from 'next/head';
 import '../styles/globals.scss';
-//import '../components/About/AboutPage.scss';
 import '../src/components/HomePage/HomePage.scss';
-/* import '../components/PortfolioPage/Portfo3.scss';
-import '../components/Form/AddProjectForm.scss';
-import '../components/PortfolioPage/TimeMachine/TimeMachine.scss';
-import '../components/PortfolioPage/Window/Window.scss';
-import '../components/Attic/Attic.scss';
-import '../components/ProjectCard/ProjectCard.scss'; */
+import '../src/components/HomePage/Modal.scss';
 import { AnimatePresence, motion, AnimateSharedLayout } from 'framer-motion';
 
 function MyApp({ Component, pageProps, router }) {

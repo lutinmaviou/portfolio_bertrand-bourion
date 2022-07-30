@@ -1,0 +1,15 @@
+.modal-container{
+    position: absolute;
+    top: 50%;
+    left: -0.3%;
+    width: 2vw;
+    height: 2.5vw;
+    background: transparent;
+    opacity: 0.7;
+    border: 0.17vw solid white;
+    border-radius: 0 1vw 1vw 0;
+    padding: 2vw;
+}
+ .thinking-head:hover{
+    cursor: pointer;
+ }
