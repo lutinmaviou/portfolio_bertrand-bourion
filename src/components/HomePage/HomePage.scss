@@ -7,7 +7,7 @@
 .moon {
   width: 30%;
   position: absolute;
-  left: 60%;
+  //left: 60%;
   top: 15%;
   z-index: -1;
 }
@@ -21,7 +21,7 @@
     font-weight: lighter;
     position: absolute;
     font-size: 5vw;
-    opacity: 0.8;
+    opacity: 0.9;
   }
   h2 {
     position: absolute;
@@ -30,7 +30,7 @@
     font-size: 2vw;
     color: rgb(255, 166, 1);
     font-weight: lighter;
-    filter: blur(0.05vw);
+    filter: blur(0.04vw);
   }
 }
 
@@ -48,11 +48,11 @@ i {
   border-radius: 50%;
   opacity: 0.8;
   box-shadow: 0 0 1vw 0.1vw white;
-  //filter: blur(0.01vw);
-  animation: animate linear infinite;
+  filter: blur(0.01vw);
+  animation: stars linear 2s infinite;
 }
 
-@keyframes animate {
+@keyframes stars {
   0% {
     opacity: 0;
     transform: translateY(0px);
