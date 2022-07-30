@@ -5,8 +5,15 @@ import { buildUrl } from 'cloudinary-build-url';
 import cloudName from '../../utils/cloudinary/cloudName';
 import { motion } from 'framer-motion';
 import Modal from './Modal';
+import comingTitle from '../../gsap/comingTitle';
+import comingMoon from '../../gsap/comingMoon';
 
 const HomePage = () => {
+  useEffect(() => {
+    comingTitle();
+    comingMoon();
+  }, []);
+
   const repo = 'portfolio-next/';
   const moon = buildUrl(`${repo}moon_f6qesv.png`, cloudName);
   const bg = buildUrl(`${repo}bg-boat_hcm2y0`, cloudName);
@@ -51,9 +58,11 @@ const HomePage = () => {
           <Image src={moon} alt="Lune" layout="responsive" width="1500" height="1500" />
         </div>
         <Image src={bg} alt="Paysage forêt" layout="fill" />
-        <h1 className="sea-gardens">Bertrand Bourion</h1>
-        <h2>on the way of creative thinking...</h2>
-        <Modal/>
+        <div className="home-title">
+          <h1 className="sea-gardens">Bertrand Bourion</h1>
+          <h2>on the way of creative thinking...</h2>
+        </div>
+        <Modal />
       </motion.div>
     </>
   );

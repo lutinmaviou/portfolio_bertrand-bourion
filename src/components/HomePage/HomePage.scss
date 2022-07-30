@@ -10,28 +10,28 @@
   left: 60%;
   top: 15%;
   z-index: -1;
-  //transform: scale(0.8);
 }
 
-h1 {
-  color: white;
-  position: absolute;
+.home-title {
+  position: relative;
   left: 3%;
+  color: white;
   z-index: -1;
-  font-size: 5vw;
-  font-weight: lighter;
-  opacity: 0.9;
-}
-
-h2 {
-  color: rgb(255, 166, 1);
-  position: absolute;
-  left: 4%;
-  top: 11%;
-  z-index: -1;
-  font-size: 2vw;
-  font-weight: lighter;
-  filter: blur(0.06vw);
+  h1 {
+    font-weight: lighter;
+    position: absolute;
+    font-size: 5vw;
+    opacity: 0.8;
+  }
+  h2 {
+    position: absolute;
+    left: 2%;
+    top: 5.5vw;
+    font-size: 2vw;
+    color: rgb(255, 166, 1);
+    font-weight: lighter;
+    filter: blur(0.05vw);
+  }
 }
 
 .dust-container {
