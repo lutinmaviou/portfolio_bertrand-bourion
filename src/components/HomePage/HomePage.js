@@ -45,7 +45,8 @@ const HomePage = () => {
         <Image src={moon} alt="Lune" layout="responsive" width="1500" height="1500" />
       </div>
       <Image src={bg} alt="Paysage forêt" layout="fill" />
-      <h1 className='digital'>Bertrand Bourion</h1>
+      <h1 className='sea-gardens'>Bertrand Bourion</h1>
+      <h2>on the way of creative thinking...</h2>
     </motion.div>
   );
 };

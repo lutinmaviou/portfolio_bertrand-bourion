@@ -5,10 +5,10 @@
 }
 
 .moon {
-  width: 40%;
+  width: 30%;
   position: absolute;
-  left: 55%;
-  top: 10%;
+  left: 60%;
+  top: 15%;
   z-index: -1;
   //transform: scale(0.8);
 }
@@ -16,11 +16,22 @@
 h1 {
   color: white;
   position: absolute;
-  top: 30%;
-  left: 2%;
+  left: 3%;
   z-index: -1;
   font-size: 5vw;
   font-weight: lighter;
+  opacity: 0.9;
+}
+
+h2 {
+  color: rgb(255, 166, 1);
+  position: absolute;
+  left: 4%;
+  top: 11%;
+  z-index: -1;
+  font-size: 2vw;
+  font-weight: lighter;
+  filter: blur(0.06vw);
 }
 
 .dust-container {
