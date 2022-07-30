@@ -28,7 +28,6 @@ const HomePage = () => {
       dust.style.height = size + 'vw';
 
       dust.style.animationDuration = 6 + duration + 's';
-      //dust.style.animationDelay = duration + 's';
 
       scene.appendChild(dust);
       i++;
@@ -46,7 +45,7 @@ const HomePage = () => {
         <Image src={moon} alt="Lune" layout="responsive" width="1500" height="1500" />
       </div>
       <Image src={bg} alt="Paysage forêt" layout="fill" />
-      <h1>Bertrand Bourion</h1>
+      <h1 className='digital'>Bertrand Bourion</h1>
     </motion.div>
   );
 };

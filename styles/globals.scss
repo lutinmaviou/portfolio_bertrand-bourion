@@ -2,11 +2,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-body{
+body {
   background: rgb(13, 2, 44);
 }
 
@@ -17,6 +17,18 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+// FONTS
+
+//Sea-gardens
+@font-face {
+  font-family: 'sea-gardens';
+  src: url('../public/fonts/sea-gardens/sea-gardens.ttf');
+}
+
+.digital {
+  font-family: 'sea-gardens';
 }
 
 @media (prefers-color-scheme: dark) {
