@@ -18,7 +18,6 @@ function MyApp({ Component, pageProps, router }) {
           name="Portfolio Bertrand Bourion"
           content="Mon portfolio créé avec Next.js"
         />
-        <title>Bertrand Bourion</title>
       </Head>
       <AnimatePresence exitBeforeEnter>
         {/* <AnimateSharedLayout> */}
