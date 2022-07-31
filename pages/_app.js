@@ -2,6 +2,7 @@ import Head from 'next/head';
 import '../styles/globals.scss';
 import '../src/components/HomePage/HomePage.scss';
 import '../src/components/HomePage/Modal.scss';
+import '../src/components/HomePage/ModalInfo/ModalInfo.scss';
 import { AnimatePresence, motion, AnimateSharedLayout } from 'framer-motion';
 
 function MyApp({ Component, pageProps, router }) {

@@ -1,0 +1,30 @@
+.modalInfo-container {
+  width: 80%;
+  height: 100vh;
+  position: relative;
+  right: -20%;
+  background: transparent;
+  .moon-modal,
+  .sea-modal,
+  .boat-modal {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    //background: white;
+    &:hover{
+        cursor: pointer;
+    }
+  }
+  .moon-modal {
+    left: 66%;
+    top: 28%;
+  }
+  .sea-modal {
+    left: 70%;
+    top: 80%;
+  }
+  .boat-modal {
+    left: 20%;
+    top: 60%;
+  }
+}

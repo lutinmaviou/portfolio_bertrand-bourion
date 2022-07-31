@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import Modal from './Modal';
 import comingTitle from '../../gsap/comingTitle';
 import comingMoon from '../../gsap/comingMoon';
+import ModalInfo from './ModalInfo/ModalInfo';
 
 const HomePage = () => {
   useEffect(() => {
@@ -63,6 +64,7 @@ const HomePage = () => {
           <h2>on the way of creative thinking...</h2>
         </div>
         <Modal />
+        <ModalInfo/>
       </motion.div>
     </>
   );
