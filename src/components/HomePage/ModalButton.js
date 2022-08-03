@@ -11,7 +11,7 @@ const ModalButton = () => {
 
   return (
     <div className="modal-container">
-      <div className="thinking-head">
+      <div className="info-icon">
         <Image src={Info} alt="Tête pensante" layout="fill" objectFit="contain" />
       </div>
     </div>

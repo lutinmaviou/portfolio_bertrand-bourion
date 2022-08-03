@@ -4,20 +4,20 @@
   position: relative;
   right: -20%;
   background: transparent;
+  display: none;
   .moon-modal,
   .sea-modal,
   .boat-modal {
     position: absolute;
     width: 5vw;
     height: 5vw;
-    //background: white;
-    &:hover{
-        cursor: pointer;
+    &:hover {
+      cursor: pointer;
     }
   }
   .moon-modal {
     left: 66%;
-    top:35%;
+    top: 35%;
   }
   .sea-modal {
     left: 70%;

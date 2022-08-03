@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { buildUrl } from 'cloudinary-build-url';
 import cloudName from '../../utils/cloudinary/cloudName';
@@ -10,14 +10,22 @@ import comingMoon from '../../gsap/comingMoon';
 import ModalInfo from './ModalInfo/ModalInfo';
 
 const HomePage = () => {
+  //const [showModal, setShowModal] = useState(false);
+
   useEffect(() => {
     comingTitle();
     comingMoon();
   }, []);
 
-  const repo = 'portfolio-next/';
-  const moon = buildUrl(`${repo}moon_f6qesv.png`, cloudName);
-  const bg = buildUrl(`${repo}bg-boat_hcm2y0`, cloudName);
+  useEffect(() => {
+    const modalButton = document.querySelector('.modal-container');
+    const modalWindow = document.querySelector('.modalInfo-container');
+    modalButton.addEventListener('click', () =>
+      modalWindow.style.display === 'block'
+        ? (modalWindow.style.display = 'none')
+        : (modalWindow.style.display = 'block')
+    );
+  }, []);
 
   useEffect(() => {
     document.body.style.overflow = 'hidden';
@@ -44,6 +52,10 @@ const HomePage = () => {
     }
   }, []);
 
+  const repo = 'portfolio-next/';
+  const moon = buildUrl(`${repo}moon_f6qesv.png`, cloudName);
+  const bg = buildUrl(`${repo}bg-boat_hcm2y0`, cloudName);
+
   return (
     <>
       <Head>
@@ -64,7 +76,7 @@ const HomePage = () => {
           <h2>on the way of creative thinking...</h2>
         </div>
         <ModalButton />
-        <ModalInfo/>
+        <ModalInfo />
       </motion.div>
     </>
   );
