@@ -53,6 +53,15 @@
     top: 10%;
     right: 10%;
   }
+  .boat-modalBox,
+  .sea-modalBox,
+  .moon-modalBox {
+    opacity: 0;
+    transition: 0.5s;
+    /* &:hover{
+      opacity: 1;
+    } */
+  }
   .modalBox-text {
     width: 80%;
   }
