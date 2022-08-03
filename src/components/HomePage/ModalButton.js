@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Info from '../../../public/img/info.png';
 import slideFromLeft from '../../gsap/slideFromLeft';
 
-const Modal = () => {
+const ModalButton = () => {
   useEffect(() => {
     const elt = document.querySelector('.modal-container');
     slideFromLeft(elt, 1, 1);
@@ -18,4 +18,4 @@ const Modal = () => {
   );
 };
 
-export default Modal;
+export default ModalButton;

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { buildUrl } from 'cloudinary-build-url';
 import cloudName from '../../utils/cloudinary/cloudName';
 import { motion } from 'framer-motion';
-import Modal from './Modal';
+import ModalButton from './ModalButton';
 import comingTitle from '../../gsap/comingTitle';
 import comingMoon from '../../gsap/comingMoon';
 import ModalInfo from './ModalInfo/ModalInfo';
@@ -63,7 +63,7 @@ const HomePage = () => {
           <h1 className="sea-gardens">Bertrand Bourion</h1>
           <h2>on the way of creative thinking...</h2>
         </div>
-        <Modal />
+        <ModalButton />
         <ModalInfo/>
       </motion.div>
     </>
