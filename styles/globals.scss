@@ -17,6 +17,12 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .flex-col {
@@ -39,6 +45,22 @@ a {
   justify-content: space-between;
 }
 
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.white {
+  color: white;
+}
+
 // FONTS
 
 //Sea-gardens
@@ -49,6 +71,16 @@ a {
 
 .sea-gardens {
   font-family: 'sea-gardens';
+}
+
+//Fredericka the Great
+.fred {
+  font-family: 'Fredericka the Great';
+}
+
+//Original-surfer
+.surfer {
+  font-family: 'Original Surfer';
 }
 
 .center {

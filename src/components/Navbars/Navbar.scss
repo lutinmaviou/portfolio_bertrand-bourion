@@ -1,0 +1,40 @@
+.navbar-container {
+  width: 100%;
+  background: rgb(62, 16, 189);
+  .about-title {
+    margin-left: 1vw;
+    cursor: pointer;
+    h1 {
+      color: white;
+      font-size: 1.5vw;
+      font-weight: lighter;
+    }
+    h2 {
+      color: rgb(255, 166, 1);
+      font-size: 1.3vw;
+      font-weight: lighter;
+      margin-top: -1.3vw;
+      margin-left: 0.2vw;
+    }
+  }
+  nav {
+    width: 20%;
+    margin-right: 5vw;
+    font-size: 1.5vw;
+    .nav-items {
+      width: 100%;
+    }
+    ul {
+      color: white;
+      list-style-type: none;
+      li {
+        transition: 0.2s;
+      }
+      li:hover,
+      .active {
+        transform: scale(1.3);
+        font-weight: bold;
+      }
+    }
+  }
+}

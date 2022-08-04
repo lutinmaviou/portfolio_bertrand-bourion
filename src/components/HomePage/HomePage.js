@@ -1,5 +1,4 @@
-import Head from 'next/head';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Image from 'next/image';
 import { buildUrl } from 'cloudinary-build-url';
 import cloudName from '../../utils/cloudinary/cloudName';
@@ -58,9 +57,6 @@ const HomePage = () => {
 
   return (
     <>
-      <Head>
-        <title>Bertrand Bourion | Portfolio</title>
-      </Head>
       <motion.div
         exit={{ rotateX: [0, 90], rotateZ: 50 }}
         transition={{ duration: 1.5, delay: 0.1 }}
@@ -70,7 +66,7 @@ const HomePage = () => {
         <div className="moon">
           <Image src={moon} alt="Lune" layout="responsive" width="1500" height="1500" />
         </div>
-        <Image src={bg} alt="Paysage forêt" layout="fill" />
+        <Image src={bg} alt="Bateau sur l'océan" layout="fill" />
         <div className="home-title">
           <h1 className="sea-gardens">Bertrand Bourion</h1>
           <h2>on the way of creative thinking...</h2>
