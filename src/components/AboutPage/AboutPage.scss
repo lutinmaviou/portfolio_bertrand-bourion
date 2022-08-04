@@ -1,3 +1,25 @@
 .about-container {
-  background: black;
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  height: 80%;
+  color: rgb(255, 123, 0);
+  font-size: 3.2vw;
+  overflow-y: scroll;
+  .top-text {
+    //text-align: justify;
+    width: 55%;
+    margin: 0 auto;
+    text-shadow: 0.2vw 0.2vw 0.3vw black, -0.2vw -0.2vw 0.3vw black;
+    padding: 3vw;
+    .me{
+      text-align: center;
+      margin-top: 10vw;
+      margin-bottom: 1vw;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }

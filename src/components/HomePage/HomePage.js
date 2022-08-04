@@ -9,8 +9,6 @@ import comingMoon from '../../gsap/comingMoon';
 import ModalInfo from './ModalInfo/ModalInfo';
 
 const HomePage = () => {
-  //const [showModal, setShowModal] = useState(false);
-
   useEffect(() => {
     comingTitle();
     comingMoon();
