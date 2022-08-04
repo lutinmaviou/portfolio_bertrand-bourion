@@ -7,15 +7,18 @@
   font-size: 3.2vw;
   overflow-y: scroll;
   .top-text {
-    //text-align: justify;
     width: 55%;
-    margin: 0 auto;
+    margin: -5vw auto 0;
     text-shadow: 0.2vw 0.2vw 0.3vw black, -0.2vw -0.2vw 0.3vw black;
-    padding: 3vw;
+    padding: 0 3vw;
     .me{
       text-align: center;
       margin-top: 10vw;
-      margin-bottom: 1vw;
+      margin-bottom: 3vw;
+    }
+    p{
+      margin: 8vw 0;
+      line-height: 4vw;
     }
   }
 }
