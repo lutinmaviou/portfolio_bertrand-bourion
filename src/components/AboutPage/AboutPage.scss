@@ -11,12 +11,12 @@
     margin: -5vw auto 0;
     text-shadow: 0.2vw 0.2vw 0.3vw black, -0.2vw -0.2vw 0.3vw black;
     padding: 0 3vw;
-    .me{
+    .me {
       text-align: center;
       margin-top: 10vw;
       margin-bottom: 3vw;
     }
-    p{
+    p {
       margin: 8vw 0;
       line-height: 4vw;
     }
@@ -25,4 +25,11 @@
 
 ::-webkit-scrollbar {
   width: 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .me {
+    width: 50%;
+    margin-left: 20%;
+  }
 }
