@@ -5,10 +5,6 @@ import { buildUrl } from 'cloudinary-build-url';
 import cloudName from '../../utils/cloudinary/cloudName';
 
 const AboutPage = () => {
-  /* useEffect(() => {
-    document.body.style.overflowY = 'visible';
-  }); */
-
   const repo = 'portfolio-next/';
   const cloudsBg = buildUrl(`${repo}clouds_psujye`, cloudName);
   const me = buildUrl(`${repo}dark-me_tyiz7n`, cloudName);

@@ -17,10 +17,10 @@ const Navbar = () => {
       <nav className="flex-col justify-center surfer">
         <div className="nav-items">
           <ul className="flex-around">
-            <li className={router.pathname === '/about' && 'active'}>
+            <li className={router.pathname === '/about' ? 'active' : ''}>
               <Link href="/about">About</Link>
             </li>
-            <li className={router.pathname === '/projects' && 'active'}>
+            <li className={router.pathname === '/projects' ? 'active' : ''}>
               <Link href="/projects">Projects</Link>
             </li>
           </ul>
