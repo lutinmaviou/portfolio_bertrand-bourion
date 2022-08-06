@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import Navbar from '../Navbars/Navbar';
 import Image from 'next/image';
 import { buildUrl } from 'cloudinary-build-url';
@@ -17,8 +16,7 @@ const AboutPage = () => {
           <p>I am Bertrand, a JavaScript Frontend Developer with Backend skills.</p>
           <p>
             Having a great appetite for design and beautiful things, I am halfway between
-            the creative web, with possibilities of 3D and exceptional rendering, and the
-            traditional web.
+            the creative and traditional web.
           </p>
           <p>
             User experience being paramount, I focus a lot on UX / UI and strive to make
