@@ -43,4 +43,10 @@
 
 .external-links {
   cursor: pointer;
+  width: 10vw;
+  margin-right: 2vw;
+}
+
+.external-links li:nth-child(2) {
+  margin-left: 2vw;
 }

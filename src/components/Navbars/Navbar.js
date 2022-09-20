@@ -32,30 +32,36 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-      <nav className="external-links flex-col justify-center surfer">
-        <div className="nav-items">
-          <ul className="flex-around">
-            <li>
-              <Image
-                src={GitHub}
-                alt="Logo GitHub"
-                layout="intrinsic"
-                width="60"
-                height="50"
-              />
-            </li>
-            <li>
-              <Image
-                src={LinkedIn}
-                alt="Logo GitHub"
-                layout="intrinsic"
-                width="60"
-                height="60"
-              />
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div className="external-links">
+        <ul className="flex-around">
+          <li>
+            <Link href="https://github.com/lutinmaviou">
+              <a target="_blank">
+                <Image
+                  src={GitHub}
+                  alt="Logo GitHub"
+                  layout="intrinsic"
+                  width="60"
+                  height="55"
+                />
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="https://www.linkedin.com/in/bertrandbourion/">
+              <a target="_blank">
+                <Image
+                  src={LinkedIn}
+                  alt="Logo LinkedIn"
+                  layout="intrinsic"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </Link>
+          </li>
+        </ul>
+      </div>
     </header>
   );
 };
