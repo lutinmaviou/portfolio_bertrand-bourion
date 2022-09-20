@@ -12,6 +12,14 @@
   z-index: -1;
 }
 
+.star-container {
+  color: rgb(255, 166, 1);
+  position: absolute;
+  z-index: 10;
+  top: 3vw;
+  right: 3vw;
+}
+
 .home-title {
   position: relative;
   left: 3%;
@@ -31,6 +39,18 @@
     color: rgb(255, 166, 1);
     font-weight: lighter;
     filter: blur(0.04vw);
+  }
+}
+
+.linkToAboutPage {
+  position: absolute;
+  top: 3vw;
+  left: 3vw;
+  width: 48vw;
+  height: 7vw;
+  z-index: 10;
+  &:hover {
+    cursor: pointer;
   }
 }
 

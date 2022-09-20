@@ -7,6 +7,7 @@ import ModalButton from './ModalButton';
 import comingTitle from '../../gsap/comingTitle';
 import comingMoon from '../../gsap/comingMoon';
 import ModalInfo from './ModalInfo/ModalInfo';
+import Link from 'next/link';
 
 const HomePage = () => {
   useEffect(() => {
@@ -61,10 +62,14 @@ const HomePage = () => {
         className="home-container"
       >
         <div className="dust-container"></div>
+
         <div className="moon">
           <Image src={moon} alt="Lune" layout="responsive" width="1500" height="1500" />
         </div>
         <Image src={bg} alt="Bateau sur l'océan" layout="fill" />
+        <Link href="/about">
+          <div className="linkToAboutPage"></div>
+        </Link>
         <div className="home-title">
           <h1 className="sea-gardens">Bertrand Bourion</h1>
           <h2>on the way of creative thinking...</h2>
