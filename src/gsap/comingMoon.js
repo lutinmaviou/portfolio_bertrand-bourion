@@ -5,7 +5,7 @@ const comingMoon = () => {
   gsap.fromTo(
     moon,
     { scale: 0.6, left: '62%' },
-    { scale: 1, left: '60%', duration: 10, ease: 'power1' }
+    { scale: 1, left: '60%', duration: 15, ease: 'power1' }
   );
 };
 

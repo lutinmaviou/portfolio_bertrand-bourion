@@ -50,6 +50,13 @@ const HomePage = () => {
     }
   }, []);
 
+  useEffect(() => {
+    const title = document.querySelector('.home-title');
+    const linkToAboutPage = document.querySelector('.linkToAboutPage');
+    linkToAboutPage.addEventListener('mouseenter', () => (title.style.filter = 'blur(0.4vw)'));
+    linkToAboutPage.addEventListener('mouseleave', () => (title.style.filter = 'blur(0)'));
+  }, []);
+
   const repo = 'portfolio-next/';
   const moon = buildUrl(`${repo}moon_f6qesv.png`, cloudName);
   const bg = buildUrl(`${repo}bg-boat_hcm2y0`, cloudName);
