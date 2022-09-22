@@ -1,0 +1,53 @@
+.starNav-container {
+  padding: 2vw;
+}
+
+.star {
+  padding: 2vw;
+  position: absolute;
+  top: 2.5vw;
+  right: 10.5vw;
+}
+
+.star-nav {
+  color: gold;
+  text-shadow: 0.2vw 0.2vw 0.3vw black, -0.2vw -0.2vw 0.3vw black;
+  background: rgba(207, 207, 207, 0.287);
+  border: 0.2vw solid rgba(255, 255, 255, 0.664);
+  border-radius: 1vw;
+  margin-top: 2vw;
+  line-height: 8vw;
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  padding: 1vw;
+  transition: 0.5s;
+  &:hover {
+    cursor: pointer;
+
+    height: 26vw;
+  }
+  ul {
+    padding: 0 2vw;
+  }
+  ul li {
+    list-style-type: none;
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: right;
+    transition: 0.2s;
+    white-space: nowrap;
+    &:hover {
+      cursor: pointer;
+      color: rgb(255, 85, 0);
+    }
+  }
+}
+
+#star {
+  transition: 0.7s;
+  &:hover {
+    transform: rotateZ(-215deg);
+    cursor: pointer;
+  }
+}

@@ -75,6 +75,12 @@ i {
   animation: stars linear 2s infinite;
 }
 
+.star-menu {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+}
+
 @keyframes stars {
   0% {
     opacity: 0;

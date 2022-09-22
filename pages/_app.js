@@ -6,6 +6,7 @@ import '../src/components/HomePage/ModalInfo/ModalInfo.scss';
 import '../src/components/Navbars/Navbar.scss';
 import '../src/components/AboutPage/AboutPage.scss';
 import '../src/components/ProjectsPage/ProjectsPage.scss';
+import '../src/components/HomePage/StarMenu/StarMenu.scss';
 import { AnimatePresence, motion, AnimateSharedLayout } from 'framer-motion';
 
 function MyApp({ Component, pageProps, router }) {

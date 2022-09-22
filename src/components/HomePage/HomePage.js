@@ -7,6 +7,7 @@ import ModalButton from './ModalButton';
 import comingTitle from '../../gsap/comingTitle';
 import comingMoon from '../../gsap/comingMoon';
 import ModalInfo from './ModalInfo/ModalInfo';
+import StarMenu from './StarMenu/StarMenu';
 import Link from 'next/link';
 
 const HomePage = () => {
@@ -53,8 +54,14 @@ const HomePage = () => {
   useEffect(() => {
     const title = document.querySelector('.home-title');
     const linkToAboutPage = document.querySelector('.linkToAboutPage');
-    linkToAboutPage.addEventListener('mouseenter', () => (title.style.filter = 'blur(0.4vw)'));
-    linkToAboutPage.addEventListener('mouseleave', () => (title.style.filter = 'blur(0)'));
+    linkToAboutPage.addEventListener(
+      'mouseenter',
+      () => (title.style.filter = 'blur(0.4vw)')
+    );
+    linkToAboutPage.addEventListener(
+      'mouseleave',
+      () => (title.style.filter = 'blur(0)')
+    );
   }, []);
 
   const repo = 'portfolio-next/';
@@ -80,6 +87,9 @@ const HomePage = () => {
         <div className="home-title">
           <h1 className="sea-gardens">Bertrand Bourion</h1>
           <h2>on the way of creative thinking...</h2>
+        </div>
+        <div className="star-menu">
+          <StarMenu />
         </div>
         <ModalButton />
         <ModalInfo />
