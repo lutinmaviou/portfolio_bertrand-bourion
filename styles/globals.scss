@@ -136,6 +136,16 @@ a {
   text-decoration: underline;
 }
 
+//Ds-Digital
+@font-face {
+  font-family: 'digital';
+  src: url('../public/fonts/ds_digital/DS-DIGIB.TTF');
+}
+
+.digital {
+  font-family: 'digital';
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
