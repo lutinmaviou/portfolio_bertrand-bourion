@@ -31,7 +31,7 @@ const HomePage = () => {
     let count = 200;
     let i = 0;
     while (i < count) {
-      let scene = document.querySelector('.dust-container');
+      let scene = document.querySelector('.stars-container');
       let dust = document.createElement('i');
       let x = Math.floor(Math.random() * window.innerWidth);
       let y = Math.floor(Math.random() * window.innerHeight);
@@ -51,7 +51,7 @@ const HomePage = () => {
     }
   }, []);
 
-  useEffect(() => {
+  /* useEffect(() => {
     const title = document.querySelector('.home-title');
     const linkToAboutPage = document.querySelector('.linkToAboutPage');
     linkToAboutPage.addEventListener(
@@ -62,7 +62,7 @@ const HomePage = () => {
       'mouseleave',
       () => (title.style.filter = 'blur(0)')
     );
-  }, []);
+  }, []); */
 
   const repo = 'portfolio-next/';
   const moon = buildUrl(`${repo}moon_f6qesv.png`, cloudName);
@@ -75,7 +75,7 @@ const HomePage = () => {
         transition={{ duration: 1.5, delay: 0.1 }}
         className="home-container"
       >
-        <div className="dust-container"></div>
+        <div className="stars-container"></div>
 
         <div className="moon">
           <Image src={moon} alt="Lune" layout="responsive" width="1500" height="1500" />
