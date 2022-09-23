@@ -8,7 +8,6 @@ import comingTitle from '../../gsap/comingTitle';
 import comingMoon from '../../gsap/comingMoon';
 import ModalInfo from './ModalInfo/ModalInfo';
 import StarMenu from './StarMenu/StarMenu';
-import Link from 'next/link';
 
 const HomePage = () => {
   useEffect(() => {
@@ -81,9 +80,7 @@ const HomePage = () => {
           <Image src={moon} alt="Lune" layout="responsive" width="1500" height="1500" />
         </div>
         <Image src={bg} alt="Bateau sur l'océan" layout="fill" />
-        <Link href="/about">
-          <div className="linkToAboutPage"></div>
-        </Link>
+        <div className="linkToAboutPage"></div>
         <div className="home-title">
           <h1 className="sea-gardens">Bertrand Bourion</h1>
           <h2>on the way of creative thinking...</h2>
