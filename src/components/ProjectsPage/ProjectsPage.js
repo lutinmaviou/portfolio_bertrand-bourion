@@ -11,9 +11,22 @@ const ProjectsPage = () => {
     <>
       <Image src={blackHole} alt="Mer de nuages" layout="fill" />
       <Navbar />
-      <main>
+      <main className="projects-container flex-around">
         <div className="yearsNav-container">
           <YearsNav />
+        </div>
+        <div className="projects-slider flex-col">
+          <div className="projects-wrapper flex-around">
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+            <div className="card"></div>
+          </div>
         </div>
       </main>
     </>
