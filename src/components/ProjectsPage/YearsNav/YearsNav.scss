@@ -2,10 +2,11 @@
   list-style-type: none;
   padding-left: 0;
   text-align: center;
+  color: rgb(232, 232, 232)
 }
 
 .yearsNav-wrapper ul li {
-  border: 0.2vw solid white;
+  border: 0.2vw solid rgb(232, 232, 232);
   font-size: 3vw;
   padding: 1vw;
   &:first-child {
@@ -16,7 +17,14 @@
   }
   &:hover {
     cursor: pointer;
-    color: rgb(255, 166, 1);
-    background: rgba(255, 255, 255, 0.177);
+    color: rgb(255, 1, 1);
+    background: linear-gradient(
+      #787878 0%,
+      #b5b5b5 25%,
+      #e3e3e3 50%,
+      #b5b5b5 75%,
+      #787878 100%
+    );
+    font-weight: 200;
   }
 }
