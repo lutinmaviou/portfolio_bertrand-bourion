@@ -10,6 +10,14 @@ const ProjectsPage = () => {
   /* useEffect(() => {
     horizontalScroll();
   }, []); */
+  useEffect(() => {
+    const scrollContainer = document.querySelector('.projects-slider');
+    scrollContainer.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      scrollContainer.scrollLeft += e.deltaY;
+    });
+  }, []);
+
   const repo = 'portfolio-next/';
   const blackHole = buildUrl(`${repo}black-hole_qy1a5c`, cloudName);
   return (
