@@ -19,10 +19,6 @@
     left: 66%;
     top: 35%;
   }
-  .sea-modal {
-    left: 70%;
-    top: 80%;
-  }
   .boat-modal {
     left: 20%;
     top: 60%;
@@ -46,16 +42,11 @@
     top: 35%;
     left: 10%;
   }
-  .sea-modalBox {
-    top: 55%;
-    right: 25%;
-  }
   .moon-modalBox {
-    top: 10%;
+    top: 50%;
     right: 10%;
   }
   .boat-modalBox,
-  .sea-modalBox,
   .moon-modalBox {
     opacity: 0;
     transition: 0.5s;
