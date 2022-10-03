@@ -11,10 +11,13 @@ body {
 }
 
 body {
-  //background: url('../public/img/black-hole.jpg');
   background: url('../public/img/sea-clouds-bg.jpg');
   background-size: cover;
   overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }
 
 a {

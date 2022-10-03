@@ -1,9 +1,12 @@
 import React from 'react';
 
-const ModalBox = ({ className, text }) => {
+const ModalBox = ({ className, title, text }) => {
   return (
     <div className={`modalBox-container flex-col ${className}`}>
-      <p className="modalBox-text">{text}</p>
+      <p>
+        <span className="modalBox-title">{title}</span>
+        <span className="modalBox-text">{text}</span>
+      </p>
     </div>
   );
 };

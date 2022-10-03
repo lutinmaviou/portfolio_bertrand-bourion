@@ -20,11 +20,23 @@ const ModalInfo = () => {
   return (
     <div className="modalInfo-container">
       <ModalQuestionMark className="boat-modal" />
-      <ModalBox className="boat-modalBox" text="The boat: for me sailing on a ocean of knowledge" />
+      <ModalBox
+        className="boat-modalBox"
+        title="The boat: "
+        text="for me sailing on an ocean of knowledge"
+      />
       <ModalQuestionMark className="sea-modal" />
-      <ModalBox className="sea-modalBox" text="The water: for the ocean of knowledge" />
+      <ModalBox
+        className="sea-modalBox"
+        title="The water: "
+        text="for the ocean of knowledge"
+      />
       <ModalQuestionMark className="moon-modal" />
-      <ModalBox className="moon-modalBox" text="The moon: for creativity and dreams" />
+      <ModalBox
+        className="moon-modalBox"
+        title="The moon: "
+        text="for creativity and dreams"
+      />
     </div>
   );
 };
