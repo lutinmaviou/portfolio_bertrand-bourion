@@ -8,6 +8,7 @@ import '../src/components/AboutPage/AboutPage.scss';
 import '../src/components/ProjectsPage/ProjectsPage.scss';
 import '../src/components/HomePage/StarMenu/StarMenu.scss';
 import '../src/components/ProjectsPage/YearsNav/YearsNav.scss';
+//import '../src/components/TestPage/TestPage.scss';
 import { AnimatePresence, motion, AnimateSharedLayout } from 'framer-motion';
 
 function MyApp({ Component, pageProps, router }) {

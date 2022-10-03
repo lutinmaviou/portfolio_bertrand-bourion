@@ -6,6 +6,9 @@
   color: rgb(255, 123, 0);
   font-size: 3.2vw;
   overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
   .top-text {
     width: 55%;
     margin: -5vw auto 0;
@@ -21,10 +24,6 @@
       line-height: 4vw;
     }
   }
-}
-
-::-webkit-scrollbar {
-  width: 0;
 }
 
 @media screen and (max-width: 1400px) {
