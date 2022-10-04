@@ -68,6 +68,7 @@ const HomePage = () => {
   const repo = 'portfolio-next/';
   const moon = buildUrl(`${repo}moon_f6qesv.png`, cloudName);
   const bg = buildUrl(`${repo}bg-boat_hcm2y0`, cloudName);
+  const star = buildUrl(`${repo}star1_yflmqv`, cloudName);
 
   return (
     <>
@@ -88,6 +89,9 @@ const HomePage = () => {
           <h2>on the way of creative thinking...</h2>
         </div>
         <div className="star-menu">
+          <div className="star">
+            <Image src={star} alt="Étoile" width="80" height="80" />
+          </div>
           <StarMenu />
         </div>
         <ModalButton />

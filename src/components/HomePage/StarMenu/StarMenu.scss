@@ -1,18 +1,19 @@
 .starNav-container {
   position: absolute;
-  top: 0vw;
+  top: 0;
   right: 2vw;
-  padding: 1.5vw;
+  padding: 2vw;
   width: 0;
   height: 0;
   color: gold;
   text-shadow: 0.2vw 0.2vw 0.3vw black, -0.2vw -0.2vw 0.3vw black;
-  background: rgba(11, 11, 11, 0.445);
-  border: 0.2vw solid rgba(255, 255, 255, 0.664);
+  background: rgba(11, 11, 11, 0);
+  border: 0.2vw solid rgba(255, 255, 255, 0);
   border-radius: 1vw;
   margin-top: 2vw;
   line-height: 8vw;
   overflow: hidden;
+  z-index: 10;
   &:hover {
     cursor: pointer;
   }
@@ -34,10 +35,10 @@
 }
 
 .star {
-  padding: 2vw;
   position: absolute;
-  top: 2.5vw;
-  right: 10.5vw;
+  width: 4vw;
+  top: 2.1vw;
+  right: 2.1vw;
 }
 
 #star {
