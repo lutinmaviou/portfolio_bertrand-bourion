@@ -8,11 +8,13 @@ import comingTitle from '../../gsap/comingTitle';
 import comingMoon from '../../gsap/comingMoon';
 import ModalInfo from './ModalInfo/ModalInfo';
 import StarMenu from './StarMenu/StarMenu';
+import deployMenu from '../../gsap/deployMenu';
 
 const HomePage = () => {
   useEffect(() => {
     comingTitle();
     comingMoon();
+    deployMenu();
   }, []);
 
   useEffect(() => {

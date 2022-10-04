@@ -1,15 +1,10 @@
 .starNav-container {
-  padding: 2vw;
-}
-
-.star {
-  padding: 2vw;
   position: absolute;
-  top: 2.5vw;
-  right: 10.5vw;
-}
-
-.star-nav {
+  top: 0vw;
+  right: 2vw;
+  padding: 1.5vw;
+  width: 0;
+  height: 0;
   color: gold;
   text-shadow: 0.2vw 0.2vw 0.3vw black, -0.2vw -0.2vw 0.3vw black;
   background: rgba(11, 11, 11, 0.445);
@@ -18,14 +13,8 @@
   margin-top: 2vw;
   line-height: 8vw;
   overflow: hidden;
-  position: relative;
-  height: 0;
-  padding: 1vw;
-  transition: 0.5s;
   &:hover {
     cursor: pointer;
-
-    height: 26vw;
   }
   ul {
     padding: 0 2vw;
@@ -34,7 +23,7 @@
     list-style-type: none;
     font-size: 4vw;
     font-weight: bold;
-    text-align: right;
+    text-align: left;
     transition: 0.2s;
     white-space: nowrap;
     &:hover {
@@ -42,6 +31,13 @@
       color: rgb(255, 85, 0);
     }
   }
+}
+
+.star {
+  padding: 2vw;
+  position: absolute;
+  top: 2.5vw;
+  right: 10.5vw;
 }
 
 #star {

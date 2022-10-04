@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 const StarMenu = () => {
   return (
-    <div className="starNav-container">
-      <nav className="star-nav surfer">
+    <nav className="starNav-container">
+      {/* <nav className="star-nav surfer"> */}
         <ul>
           <li>
             <Link href="/about">about me</Link>
@@ -13,8 +13,8 @@ const StarMenu = () => {
           </li>
           <li>contact me</li>
         </ul>
-      </nav>
-    </div>
+      {/* </nav> */}
+    </nav>
   );
 };
 
