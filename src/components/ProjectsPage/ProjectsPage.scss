@@ -31,7 +31,8 @@
 .card {
   width: 18vw;
   height: 18vw;
-  background: white;
+  //background: white;
+  border: 1px solid white;
   margin: 1vw;
   &:hover {
     cursor: pointer;

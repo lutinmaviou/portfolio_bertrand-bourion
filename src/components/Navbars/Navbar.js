@@ -26,8 +26,8 @@ const Navbar = () => {
             <li className={router.pathname === '/about' ? 'active' : ''}>
               <Link href="/about">About</Link>
             </li>
-            <li className={router.pathname === '/projects' ? 'active' : ''}>
-              <Link href="/projects">Projects</Link>
+            <li className={router.pathname === '/portfolio' ? 'active' : ''}>
+              <Link href="/portfolio">Portfolio</Link>
             </li>
           </ul>
         </div>

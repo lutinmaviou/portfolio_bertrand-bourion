@@ -3,10 +3,24 @@ import cloudName from '../../utils/cloudinary/cloudName';
 import Image from 'next/image';
 import Navbar from '../Navbars/Navbar';
 import YearsNav from './YearsNav/YearsNav';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import horizontalScroll from '../../gsap/horizontalScroll';
 
-const ProjectsPage = () => {
+const ProjectsPage = (properties) => {
+  const router = useRouter();
+  'router year : ' + router.query.year;
+  const data = properties.props;
+  console.log(data);
+
+  //const year = router.query.year;
+  //const [actualData, setActualData] = useState([]);
+  /* useEffect(() => {
+    const array = props.filter((i) => i.year === year);
+    console.log(array);
+    return setActualData(array);
+  }, [year]); */
+
   /* useEffect(() => {
     horizontalScroll();
   }, []); */
@@ -18,8 +32,9 @@ const ProjectsPage = () => {
     });
   }, []);
 
-  const repo = 'portfolio-next/';
-  const blackHole = buildUrl(`${repo}black-hole_qy1a5c`, cloudName);
+  const repo = 'portfolio/portfolio/';
+  const repo2 = 'portfolio-next/';
+  const blackHole = buildUrl(`${repo2}black-hole_qy1a5c`, cloudName);
   return (
     <>
       <Image src={blackHole} alt="Trou noir" layout="fill" />
@@ -30,15 +45,15 @@ const ProjectsPage = () => {
         </div>
         <section className="projects-slider flex-col">
           <div className="projects-wrapper flex-around">
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
+            {data.map((item) => (
+              <div key={item._id} className="card">
+                <Image
+                  src={buildUrl(`${repo}${item.cover}`, cloudName)}
+                  width={350}
+                  height={350}
+                />
+              </div>
+            ))}
           </div>
         </section>
       </main>
