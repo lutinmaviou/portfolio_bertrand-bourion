@@ -28,6 +28,32 @@ const ProjectsPage = (properties) => {
     });
   }, []);
 
+  const calcProjectsWidth = () => {
+    const container = document.querySelector('.projects-wrapper');
+    const sections = [...document.querySelectorAll('.card')];
+    //const sections = [...htmlCollection];
+    console.log(sections);
+    let maxWidth = 0;
+    sections.forEach((section) => {
+      maxWidth += section.offsetWidth;
+    });
+    console.log(maxWidth);
+    //container.style.width = `${maxWidth}vw`;
+  };
+
+  useEffect(() => {
+    const container = document.querySelector('.projects-wrapper');
+    const sections = [...document.querySelectorAll('.card')];
+    //const sections = [...htmlCollection];
+    console.log(sections);
+    let maxWidth = 0;
+    sections.forEach((section) => {
+      maxWidth += section.offsetWidth;
+    });
+    console.log(maxWidth);
+    //container.style.width = `${maxWidth}vw`;
+  });
+
   const repo = 'portfolio/portfolio/';
   const repo2 = 'portfolio-next/';
   const blackHole = buildUrl(`${repo2}black-hole_qy1a5c`, cloudName);

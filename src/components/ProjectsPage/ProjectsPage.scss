@@ -24,15 +24,13 @@
   justify-content: center;
 }
 
-.projects-wrapper {
-  width: 450%;
-}
+/* .projects-wrapper {
+  width: 150vw;
+} */
 
 .card {
   width: 18vw;
   height: 18vw;
-  //background: white;
-  border: 1px solid white;
   margin: 1vw;
   &:hover {
     cursor: pointer;
