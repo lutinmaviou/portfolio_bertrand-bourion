@@ -1,24 +1,26 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { connectToDatabase } from '../../src/utils/mongodb';
+import { connectToDatabase } from '../../../src/utils/mongodb';
+import ProjectCard from '../../../src/components/ProjectPage/ProjectPage';
 
-const ProjectCard = ({ property }) => {
+const ProjectPage = ({ property }) => {
   const router = useRouter();
   const year = router.query.year;
-  console.log(property);
-  //const title = property.title;
+  const data = property;
+  const title = property.title;
   return (
     <>
       <Head>
         <title>
-          {/* {title} */} | {year} | Bertrand Bourion
+          {title} | {year} | Bertrand Bourion
         </title>
       </Head>
+      <ProjectCard property={property} />
     </>
   );
 };
 
-export default ProjectCard;
+export default ProjectPage;
 
 /* export const getStaticPaths = async () => {
   const { db } = await connectToDatabase();

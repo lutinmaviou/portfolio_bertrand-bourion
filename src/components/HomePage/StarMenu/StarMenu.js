@@ -8,7 +8,7 @@ const StarMenu = () => {
           <Link href="/about">about me</Link>
         </li>
         <li>
-          <Link href="/portfolio"/*  as={`/portfolio/2019`} */ passHref>
+          <Link href="/portfolio/[year]/" as={`/portfolio/2019`} passHref>
             portfolio
           </Link>
         </li>

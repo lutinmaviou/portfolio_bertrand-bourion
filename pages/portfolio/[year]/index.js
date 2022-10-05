@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import ProjectsPage from '../../src/components/ProjectsPage/ProjectsPage';
-import { connectToDatabase } from '../../src/utils/mongodb';
+import ProjectsPage from '../../../src/components/ProjectsPage/ProjectsPage';
+import { connectToDatabase } from '../../../src/utils/mongodb';
 import { useRouter } from 'next/router';
 
 export default function Portfolio({ properties }) {
