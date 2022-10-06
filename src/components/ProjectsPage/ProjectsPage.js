@@ -31,27 +31,17 @@ const ProjectsPage = (properties) => {
   const calcProjectsWidth = () => {
     const container = document.querySelector('.projects-wrapper');
     const sections = [...document.querySelectorAll('.card')];
-    //const sections = [...htmlCollection];
-    console.log(sections);
+    //console.log(sections);
     let maxWidth = 0;
     sections.forEach((section) => {
-      maxWidth += section.offsetWidth;
+      maxWidth += section.offsetWidth / 4.5;
     });
     console.log(maxWidth);
-    //container.style.width = `${maxWidth}vw`;
+    container.style.width = `${maxWidth}vw`;
   };
 
   useEffect(() => {
-    const container = document.querySelector('.projects-wrapper');
-    const sections = [...document.querySelectorAll('.card')];
-    //const sections = [...htmlCollection];
-    console.log(sections);
-    let maxWidth = 0;
-    sections.forEach((section) => {
-      maxWidth += section.offsetWidth;
-    });
-    console.log(maxWidth);
-    //container.style.width = `${maxWidth}vw`;
+    return () => calcProjectsWidth();
   });
 
   const repo = 'portfolio/portfolio/';
