@@ -28,7 +28,7 @@ const ProjectsPage = (properties) => {
     });
   }, []);
 
-  const calcProjectsWidth = () => {
+  /* const calcProjectsWidth = () => {
     const container = document.querySelector('.projects-wrapper');
     const sections = [...document.querySelectorAll('.card')];
     //console.log(sections);
@@ -37,12 +37,12 @@ const ProjectsPage = (properties) => {
       maxWidth += section.offsetWidth / 4.5;
     });
     console.log(maxWidth);
-    container.style.width = `${maxWidth}vw`;
+    return (container.style.width = `${maxWidth}vw`);
   };
 
   useEffect(() => {
-    return () => calcProjectsWidth();
-  });
+    () => calcProjectsWidth();
+  }); */
 
   const repo = 'portfolio/portfolio/';
   const repo2 = 'portfolio-next/';
