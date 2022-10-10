@@ -1,10 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
-const YearsNav = () => {
-  const handleDate = (e) => {
-    
-  };
+const YearsNav = ({ year }) => {
+  console.log(year);
+  const handleDate = (e) => {};
   return (
     <nav className="yearsNav-wrapper digital">
       <ul>
