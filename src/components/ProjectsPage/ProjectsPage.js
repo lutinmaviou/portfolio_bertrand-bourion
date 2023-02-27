@@ -53,7 +53,7 @@ const ProjectsPage = (properties) => {
       <Navbar />
       <main className="projects-container flex-around">
         <div className="yearsNav-container">
-          <YearsNav year = {year}/>
+          <YearsNav year={year} data={data} />
         </div>
         <section className="projects-slider flex-col">
           <div className="projects-wrapper flex-around">

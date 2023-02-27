@@ -2,7 +2,7 @@
   list-style-type: none;
   padding-left: 0;
   text-align: center;
-  color: rgb(232, 232, 232)
+  color: rgb(232, 232, 232);
 }
 
 .yearsNav-wrapper ul li {
@@ -15,7 +15,8 @@
   &:last-child {
     border-radius: 0 0 0.5vw 0.5vw;
   }
-  &:hover {
+  &:hover,
+  &.titi {
     cursor: pointer;
     color: rgb(255, 144, 40);
     background: linear-gradient(
@@ -28,3 +29,15 @@
     font-weight: 200;
   }
 }
+
+/* .titi {
+  color: rgb(255, 144, 40);
+  background: linear-gradient(
+    #78787871 0%,
+    #b5b5b571 25%,
+    #e3e3e371 50%,
+    #b5b5b571 75%,
+    #78787871 100%
+  );
+  font-weight: 200;
+} */
