@@ -16,8 +16,9 @@
 .projects-slider {
   width: 70%;
   height: 30vw;
-  border: 0.2vw solid rgb(232, 232, 232);
+  border: 0.3vw solid rgb(232, 232, 232);
   border-radius: 0.5vw;
+  box-shadow: inset 0 0 10vw 4vw black;
   margin-left: 10vw;
   padding: 2vw;
   overflow-x: hidden;
@@ -32,6 +33,8 @@
   width: 18vw;
   height: 18vw;
   margin: 1vw;
+  border: 0.4vw solid white;
+  border-radius: 0.5vw;
   &:hover {
     cursor: pointer;
   }

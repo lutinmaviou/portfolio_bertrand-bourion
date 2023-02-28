@@ -4,10 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 const YearsNav = ({ year, data }) => {
-  console.log(year);
   const router = useRouter();
-  console.log(router.asPath);
-  const handleDate = (e) => {};
   return (
     <nav className="yearsNav-wrapper digital">
       <ul>

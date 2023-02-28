@@ -5,6 +5,7 @@ import Navbar from '../Navbars/Navbar';
 import YearsNav from './YearsNav/YearsNav';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const ProjectsPage = (properties) => {
   const router = useRouter();
@@ -60,11 +61,16 @@ const ProjectsPage = (properties) => {
             {actualData &&
               actualData.map((item) => (
                 <div key={item._id} className="card">
-                  <Image
-                    src={buildUrl(`${repo}${item.cover}`, cloudName)}
-                    width={350}
-                    height={350}
-                  />
+                  <Link
+                    href="/portfolio/[year]/[slug]/"
+                    as={`/portfolio/${item.year}/${item.slug}`}
+                  >
+                    <Image
+                      src={buildUrl(`${repo}${item.cover}`, cloudName)}
+                      width={350}
+                      height={350}
+                    />
+                  </Link>
                 </div>
               ))}
           </div>
