@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { buildUrl } from 'cloudinary-build-url';
 import cloudName from '../../utils/cloudinary/cloudName';
@@ -9,8 +9,18 @@ import comingMoon from '../../gsap/comingMoon';
 import ModalInfo from './ModalInfo/ModalInfo';
 import StarMenu from './StarMenu/StarMenu';
 import deployMenu from '../../gsap/deployMenu';
+import WelcomePage from '../WelcomePage/WelcomePage';
 
 const HomePage = () => {
+  //const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    window.addEventListener('load', () => {
+      console.log('la page est chargée');
+      setLoading(false);
+    });
+  }, []);
+
   useEffect(() => {
     comingTitle();
     comingMoon();
@@ -33,37 +43,24 @@ const HomePage = () => {
     let i = 0;
     while (i < count) {
       let scene = document.querySelector('.stars-container');
-      let dust = document.createElement('i');
+      let stars = document.createElement('i');
       let x = Math.floor(Math.random() * window.innerWidth);
       let y = Math.floor(Math.random() * window.innerHeight);
       let size = Math.random() * 0.3;
 
       let duration = Math.random() * 10;
 
-      dust.style.left = x + 'px';
-      dust.style.top = y + 'px';
-      dust.style.width = size + 'vw';
-      dust.style.height = size + 'vw';
+      stars.style.left = x + 'px';
+      stars.style.top = y + 'px';
+      stars.style.width = size + 'vw';
+      stars.style.height = size + 'vw';
 
-      dust.style.animationDuration = 20 + duration + 's';
+      stars.style.animationDuration = 20 + duration + 's';
 
-      scene.appendChild(dust);
+      scene.appendChild(stars);
       i++;
     }
   }, []);
-
-  /* useEffect(() => {
-    const title = document.querySelector('.home-title');
-    const linkToAboutPage = document.querySelector('.linkToAboutPage');
-    linkToAboutPage.addEventListener(
-      'mouseenter',
-      () => (title.style.filter = 'blur(0.4vw)')
-    );
-    linkToAboutPage.addEventListener(
-      'mouseleave',
-      () => (title.style.filter = 'blur(0)')
-    );
-  }, []); */
 
   const repo = 'portfolio-next/';
   const moon = buildUrl(`${repo}moon_f6qesv.png`, cloudName);
